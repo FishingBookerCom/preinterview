@@ -6,6 +6,7 @@ function price_of($ingredients, $prices) {
     $counter = 0;
     foreach($prices as $key => $value) {
         $total_price = $total_price + ($ingredients[$counter]['amount'] * $value);
+        $counter++;
     }
     return $total_price;
 }

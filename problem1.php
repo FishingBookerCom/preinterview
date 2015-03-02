@@ -14,6 +14,7 @@ $offer->variation8 = 'i';
 $offer->variation9 = 'j';
 /* NE MENJATI */
 
+/*
 echo 'Here’s what we have to offer: '.$offer->variation0;
 echo 'Here’s what we have to offer: '.$offer->variation1;
 echo 'Here’s what we have to offer: '.$offer->variation2;
@@ -24,3 +25,8 @@ echo 'Here’s what we have to offer: '.$offer->variation6;
 echo 'Here’s what we have to offer: '.$offer->variation7;
 echo 'Here’s what we have to offer: '.$offer->variation8;
 echo 'Here’s what we have to offer: '.$offer->variation9;
+*/
+
+foreach($offer as $o) {
+    echo 'Here’s what we have to offer: '.$o;
+}

@@ -1,8 +1,9 @@
-/* Dino je gladan i odlazi u Agi pastu da uzme svoje omiljene "Funghi Fusilli" */
-/* Implementirati funkciju koja za zadati niz sastojaka i niz cena pojedinačnih sastojaka vraća ukupnu cenu sastojaka. */
-
 function price_of($ingredients, $prices) {
-    return FALSE;
+	$sum = 0;
+    foreach ($ingredients as $i) {
+	$sum += $prices[$i['name']]*$i['amount'];
+	}
+	return $sum;
 }
 
 assert(
@@ -10,16 +11,16 @@ assert(
        array(
            array('name' => 'Fusili',                    'amount' => 3),
            array('name' => 'Pavlaka',                   'amount' => 2),
-           array('name' => 'Šampinjoni',                'amount' => 2),
-           array('name' => 'Devičansko maslinovo ulje', 'amount' => 1),
+           array('name' => 'ampinjoni',                'amount' => 2),
+           array('name' => 'Deviansko maslinovo ulje', 'amount' => 1),
            array('name' => 'Bosiljak',                  'amount' => 1),
            array('name' => 'Parmezan',                  'amount' => 1)
        ),
        array(
            'Fusili'                    => 20,
            'Pavlaka'                   => 20,
-           'Šampinjoni'                => 25,
-           'Devičansko maslinovo ulje' => 20,
+           'ampinjoni'                => 25,
+           'Deviansko maslinovo ulje' => 20,
            'Bosiljak'                  => 25,
            'Parmezan'                  => 35
        )

@@ -2,7 +2,11 @@
 /* Implementirati funkciju koja za zadati niz sastojaka i niz cena pojedinačnih sastojaka vraća ukupnu cenu sastojaka. */
 
 function price_of($ingredients, $prices) {
-    return FALSE;
+	$price = 0;
+	for($i=0; $i<count($ingredients); $i++){
+		$price += $ingredients[$i]['amount'] * $prices[$ingredients[$i]['name']];
+	}
+	return $price;
 }
 
 assert(

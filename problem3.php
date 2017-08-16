@@ -25,3 +25,7 @@ assert(
        )
    ) === (3*20 + 2*20 + 2*25 + 1*20 + 1*25 + 1*35) // === 230
 );
+
+cena = 0
+for i in ingrediants:
+    cena += ingrediants[i] * prices[i]

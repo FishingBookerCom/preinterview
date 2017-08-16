@@ -24,3 +24,9 @@ echo 'Here’s what we have to offer: '.$offer->variation6;
 echo 'Here’s what we have to offer: '.$offer->variation7;
 echo 'Here’s what we have to offer: '.$offer->variation8;
 echo 'Here’s what we have to offer: '.$offer->variation9;
+
+
+
+for ($i = 0; $i <= 9; $i++){
+                    call_user_func( array( $offer, 'variation' . $i ) );
+                    }
